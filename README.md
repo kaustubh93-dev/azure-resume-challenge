@@ -12,7 +12,7 @@ If you'd like to build your own, here is the YouTube video [video](https://youtu
 
 ## Demo
 
-[View it live here](hhttps://www.kausha.in/)
+[View it live here](https://www.kausha.in/)
 
 ## Structure
 
