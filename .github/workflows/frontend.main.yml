@@ -1,3 +1,5 @@
+# Ref https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-static-site-github-actions?tabs=userlevel
+
 name: deploy_frontend
 # deploy when push is made from froentend folder 
 on:
