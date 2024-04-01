@@ -12,16 +12,18 @@ If you'd like to build your own, here is the YouTube video [video](https://youtu
 
 ## Demo
 
-[View it live here](https://www.gpsresume.com/)
+[View it live here](hhttps://www.kausha.in/)
 
 ## Structure
 
 - `frontend/`: Folder contains the website.
-    - `main.js`: Folder contains visitor counter code.
-- `api/`: Folder contains the dotnet API deployed on Azure Functions.
-    - `Counter.cs`: Contains the visitor counter code.
+    - `frontend/js/visitorCounter.js`: Folder contains visitor counter code in Javascript.
+
+- `backend/`: 
+    - `api/`: Folder contains the Python API deployed on Azure Functions.
+    - `ResumeCounter/_init_.py`: Contains the visitor counter code.
+    
 - `.github/workflows/`: Folder contains CI/CD workflow configurations.
-- `.devcontainer`: Folder contains the my container configuration for VS Code.
 
 ## Frontend resources
 
@@ -34,13 +36,13 @@ The front-end is a static site with HTML, CSS, and JavaScript. It's static and h
 
 ## Backend resources
 
-The back-end is an [HTTP triggered Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-http-webhook-trigger?tabs=csharp) with Cosmos DB input and output binding. The Function is triggered, it retrieves the CosmosDB item, adds 1 to it, and saves it and returns its value to the caller.
+The back-end is an [HTTP triggered Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-http-webhook-trigger?tabs=python) with Cosmos DB input and output binding. The Function is triggered, it retrieves the CosmosDB item, adds 1 to it, and saves it and returns its value to the caller.
 
 - [Create a Cosmos DB account](https://docs.microsoft.com/en-us/azure/cosmos-db/create-cosmosdb-resources-portal)
-- [Create an HTTP triggered Azure Function in Visual Studio Code.](https://docs.microsoft.com/azure/azure-functions/functions-develop-vs-code?tabs=csharp)
+- [Create an HTTP triggered Azure Function in Visual Studio Code.](https://docs.microsoft.com/azure/azure-functions/functions-develop-vs-code?tabs=python)
 - [Azure Functions Cosmos DB bindings](https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-cosmosdb-v2)
-- [Retrieve a Cosmos DB item with Functions binding.](https://docs.microsoft.com/azure/azure-functions/functions-bindings-cosmosdb-v2-input?tabs=csharp)
-- [Write to a Cosmos DB item with Functions binding.](https://docs.microsoft.com/azure/azure-functions/functions-bindings-cosmosdb-v2-output?tabs=csharp)
+- [Retrieve a Cosmos DB item with Functions binding.](https://docs.microsoft.com/azure/azure-functions/functions-bindings-cosmosdb-v2-input?tabs=python)
+- [Write to a Cosmos DB item with Functions binding.](https://docs.microsoft.com/azure/azure-functions/functions-bindings-cosmosdb-v2-output?tabs=python)
 - You'll have to [enable CORS with Azure Functions locally](https://learn.microsoft.com/azure/azure-functions/functions-develop-local#local-settings-file) and once it's [deployed to Azure](https://docs.microsoft.com/azure/azure-functions/functions-how-to-use-azure-function-app-settings?tabs=portal#cors) for you website to be able to call it.
 
 ## Testing Resources
@@ -55,6 +57,6 @@ The back-end is an [HTTP triggered Azure Functions](https://docs.microsoft.com/e
 
 - This is how you can deploy a blob storage static site with [GitHub actions.](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-static-site-github-actions)
 - This is how you can [deploy an Azure Function to Azure with GitHub Actions.](https://github.com/marketplace/actions/azure-functions-action)
-- [Implement .NET testing in GitHub Actions.](https://docs.github.com/en/actions/guides/building-and-testing-net)
+- [Implement python testing in GitHub Actions.](https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python)
 
 
