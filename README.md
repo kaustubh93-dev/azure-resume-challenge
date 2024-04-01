@@ -6,9 +6,9 @@ This is my Cloud Resume Challenge built on Azure. It's a static website hosted o
 
 If you'd like to build your own, here is the YouTube video [video](https://youtu.be/ieYrBWmkfno) 
 
-![alt text](image.png)
+## Architecture layout
 
-![alt text](image-1.png)
+![alt text](<resume architecture-1.PNG>)
 
 ## Demo
 
