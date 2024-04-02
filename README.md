@@ -8,7 +8,7 @@ If you'd like to build your own, here is the YouTube video [video](https://youtu
 
 ## Architecture layout
 
-![alt text](<resume architecture-1.PNG>)
+![alt text](<resume architecture.PNG>)
 
 ## Demo
 
