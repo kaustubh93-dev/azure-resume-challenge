@@ -5,7 +5,6 @@ resource "azurerm_cosmosdb_account" "cosmosdb_account" {
   offer_type          = "Standard"
   kind                = "GlobalDocumentDB"
 
-  enable_automatic_failover = true
 
   capabilities {
     name = "EnableServerless"
